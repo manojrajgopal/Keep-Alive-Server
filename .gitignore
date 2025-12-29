@@ -1,0 +1,65 @@
+# ========================
+# Python / Backend
+# ========================
+
+# Virtual environment
+venv/
+env/
+.venv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# ========================
+# Database
+# ========================
+
+# SQLite (if ever used)
+*.sqlite3
+
+# MySQL dumps / logs
+*.sql
+
+# ========================
+# Node / Frontend
+# ========================
+
+# Node modules
+node_modules/
+
+# Vite / React build
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# OS / Editor junk
+# ========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# VS Code
+.vscode/
+
+# ========================
+# Misc
+# ========================
+
+# Coverage / temp
+coverage/
+*.log
