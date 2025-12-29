@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export async function getProjects() {
   const res = await fetch(`${API_BASE}/projects`);
@@ -24,7 +24,7 @@ export async function updateProject(id, data) {
 }
 
 export async function deleteProject(id) {
-  const res = await fetch(`http://127.0.0.1:8000/projects/${id}`, {
+  const res = await fetch(`${API_BASE}/projects/${id}`, {
     method: "DELETE",
   });
   return res.json();

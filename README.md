@@ -38,6 +38,7 @@ Creating the database in MySql
 <!-- Insert the data for test weather the table insert the data or not check condition -->
 
 INSERT INTO projects (name, url, `interval`, enabled)
+
 VALUES (
   'Test App',
   'https://example.com',

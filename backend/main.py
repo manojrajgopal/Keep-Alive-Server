@@ -97,7 +97,7 @@ def list_projects(db: Session = Depends(get_db)):
 
 # ✅ EDIT PROJECT
 @app.put("/projects/{project_id}")
-def edit_project(
+async def edit_project(
     project_id: int,
     data: ProjectUpdate,
     db: Session = Depends(get_db)
@@ -112,6 +112,7 @@ def edit_project(
         stop_project(project.id)
 
     return project
+
 
 @app.delete("/projects/{project_id}")
 async def delete_project(project_id: int, db: Session = Depends(get_db)):
